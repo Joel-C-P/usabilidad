@@ -26,7 +26,7 @@
             </a>
             <ul class="list-group list-group-horizontal">
                 <li id="ContentButton" class="list-group-item" onclick="ShowContent();">Content</li>
-                <li id="FormButton" class="list-group-item" onclick="ShowContact();"><i class="bi bi-envelope"></i></li>
+                <li id="FormButton" class="list-group-item " onclick="ShowContact();"><i class="bi bi-envelope"></i></li>
             </ul>
         </div>
     </nav>
@@ -34,7 +34,7 @@
         <div class="card">
             <div class="card-header">
                 <section>
-                    <h1 style="font-size: 3.5rem"> Page Title</h1>
+                    <h1 style="font-size: 3.5rem"> Ciberseguridad</h1>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis turpis malesuada risus rutrum, quis imperdiet est sodales. Cras aliquet eu tellus sed cursus. Quisque a suscipit nulla. Sed dui lectus, gravida sit amet tellus eu, suscipit varius nulla. Sed tincidunt gravida arcu sit amet condimentum. Donec felis risus, sodales non euismod ut, egestas at nisl. Quisque ipsum turpis, rhoncus sed mollis ac, hendrerit non metus. Proin vulputate dui eget nunc ornare aliquet. Aenean iaculis posuere nisi, ac tincidunt ligula malesuada id. Mauris lorem ipsum, finibus sed tortor sit amet, posuere facilisis erat. Phasellus convallis, quam et aliquet ultricies, tellus sem pellentesque erat, nec iaculis ipsum massa vel quam.
                 </section>
             </div>
@@ -235,9 +235,47 @@
           </div>
         </form>
       </div>
-    <footer class="fixed-bottom">
-        UWU
-    </footer>
+    
+
+
+
+      <div class="footer-container">
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h3>Informacion de contacto</h3>
+                <p>Correo electronico: info@example.com</p>
+                <p>Telefono: +123456789</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h3>Enlaces utiles</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Acerca de nosotros</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <h3 class="text-center" style="padding-top: 20px;">Siguenos en redes sociales</h3>
+                <ul class="list-inline text-center">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+
+
+
+
+
     <div class="modal fade" id="exampleModal" tabindex="-1">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -266,6 +304,7 @@
         function ShowContact() {
             Contact.style.display = "block";
             Content.style.display = "none";
+            
         }
 
     </script>
