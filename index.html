@@ -17,7 +17,7 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary ">
+    <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/hacker.png" alt="Logo" class="d-inline-block align-text-center" style="width:100px; height:70px" loading="lazy">
@@ -25,7 +25,7 @@
 
             </a>
             <ul class="list-group list-group-horizontal">
-                <li id="ContentButton" class="list-group-item" onclick="ShowContent();">Content</li>
+                <li id="ContentButton" class="list-group-item" type="button" onclick="ShowContent();">Footer</li>
                 <li id="FormButton" class="list-group-item " onclick="ShowContact();"><i class="bi bi-envelope"></i></li>
             </ul>
         </div>
@@ -240,7 +240,7 @@
 
 
       <div class="footer-container">
-        <footer class="footer">
+        <footer id="Footer" class="footer" style="padding-top: 110px;">
           <div class="container">
             <div class="row">
               <div class="col-lg-4 col-md-6 mb-4">
@@ -295,15 +295,19 @@
 
     
 
-        const Content = document.getElementById('Content');
+        const Footer = document.getElementById('Footer');
         const Contact = document.getElementById('Contact');
+        const Content = document.getElementById('Content');
         function ShowContent() {
-            Content.style.display = "block";
+            Footer.style.display = "block";
             Contact.style.display = "none";
+            Content.style.display = "none";
         }
         function ShowContact() {
+
             Contact.style.display = "block";
             Content.style.display = "none";
+            Footer.style.display = "none";
             
         }
 
