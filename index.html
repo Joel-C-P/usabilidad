@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/img/logo.bmp" class="d-inline-block align-text-top" style="width:100px; height:70px" loading="lazy">
-                MeaWeb
+                Logopedia
             </a>
             <ul class="list-group list-group-horizontal">
                 <li id="ContentButton" class="list-group-item" onclick="ShowContent();">Content</li>
@@ -187,56 +187,53 @@
     </div>
     <div id="Contact" class="container" style="padding-top: 110px;">
         <form>
-            <div class="card">
-
-                <div class="card-header">
-                    <span class="card-title">This is a form</span>
-                </div>
-                <div class="card-body">
-                    <table style="width:100%;">
-                        <tr>
-                            <td>
-                                <div class="mb-3">
-                                    <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Date and time</label>
-                                    <input type="datetime-local" class="form-control" id="exampleInputDateTime">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label">Check me out</label>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                    <label class="form-check-label">Check me out</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="mb-3">
-                                    <label class="form-label">Options</label>
-                                    <select class="form-select" id="exampleSelect">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="card-footer">
-                    <button id="exampleModalButton" type="submit" class="btn btn-primary"><i class="bi bi-send"></i></button>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-title">Formulario</span>
             </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Fecha y hora</label>
+                    <input type="datetime-local" class="form-control" id="exampleInputDateTime">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label">Acepta las politicas de privacidad</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label">Acepta que le enviemos ofertas a futuro</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Opciones</label>
+                    <select class="form-select" id="exampleSelect">
+                      <option selected>Abre esta selecion de menu</option>
+                      <option value="1">Uno</option>
+                      <option value="2">Dos</option>
+                      <option value="3">Tres</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button id="exampleModalButton" type="submit" class="btn btn-primary">Enviar<i class="bi bi-send"></i></button>
+            </div>
+          </div>
         </form>
-    </div>
+      </div>
     <footer class="fixed-bottom">
         UWU
     </footer>
@@ -244,11 +241,11 @@
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="card-title">Form sent</span>
+                    <span class="card-title">Formulario enviado exitosamente</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary"><i class="bi bi-check"></i></button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-check"></i></button>
                 </div>
             </div>
         </div>
@@ -256,6 +253,8 @@
     <script>
         const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
         document.getElementById('exampleModalButton').onclick = function () { myModal.show(); };
+
+    
 
         const Content = document.getElementById('Content');
         const Contact = document.getElementById('Contact');
